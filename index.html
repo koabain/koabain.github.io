@@ -11,10 +11,14 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav>
+<nav>
     <div class="container">
       <h1>Kelly Chawasarira</h1>
-      <ul>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -31,9 +35,8 @@
       </ul>
     </div>
   </nav>
-
-  <!-- Hero Section -->
-  <section id="hero">
+   <!-- Hero Section -->
+   <section id="hero">
     <div class="container">
       <img src="pfp.jpg" alt="Kelly">
       <h1>Kelly Chawasarira</h1>
@@ -42,8 +45,8 @@
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
+   <!-- About Section -->
+   <section id="about">
     <div class="container">
       <img src="pfp.jpg" alt="About Me">
       <div>
@@ -52,6 +55,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Skills Section -->
   <section id="skills">
@@ -163,6 +167,25 @@
       icon.classList.add('fa-moon');
       localStorage.setItem('darkMode', 'disabled');
     }
+
+  // Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Navbar Scroll Behavior
+const nav = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    nav.classList.add('compact');
+  } else {
+    nav.classList.remove('compact');
+  }
+});
   </script>
 </body>
 </html>
