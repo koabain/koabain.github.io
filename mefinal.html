@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelly Chawasarira | Aspiring Professional</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1>Kelly Chawasarira</h1>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="kelly chawasarira cv (f).pdf" class="download-cv" download>Download CV</a>
+        </li>
+        <li>
+          <button class="dark-mode-toggle" id="dark-mode-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <img src="pfp.jpg" alt="Kelly">
+      <h1>Kelly Chawasarira</h1>
+      <p>Aspiring IT Professional | Passionate about Building Solutions</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <img src="pfp.jpg" alt="About Me">
+      <div>
+        <h2>About Me</h2>
+        <p>Hi, I'm Kelly Chawasarira, an IT student passionate about building scalable and user-friendly applications. I am eager to expand my knowledge and skills in programming, web development, and database management. I enjoy exploring new technologies and tackling real-world problems through hands-on experience. Expected to graduate in June 2027, I am always looking for opportunities to learn, improve, and apply what I study in practical ways.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database"></i>
+          <h3>Database Management</h3>
+        </div>
+        <div class="skill">
+          <i class="fas fa-network-wired"></i>
+          <h3>Networking</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Personal Portfolio Website</h3>
+          <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="project">
+          <h3>Expense Management System</h3>
+          <p>Built a Python application for tracking expenses and profits.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kellychawasarira55@gmail.com">kellychawasarira55@gmail.com</a></p>
+      <p>Phone: +263 78 067 0416</p>
+      <p>Location: Mutoko, Zimbabwe</p>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Let's Connect! | © 2023 Kelly Chawasarira</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/kelly-chawasarira-b65102357/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/koabain"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const sections = document.querySelectorAll('section');
+    const skills = document.querySelectorAll('.skill');
+    const projects = document.querySelectorAll('.project');
+
+    // Check for saved dark mode preference
+    const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+    if (isDarkMode) {
+      enableDarkMode();
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+      if (body.classList.contains('dark-mode')) {
+        disableDarkMode();
+      } else {
+        enableDarkMode();
+      }
+    });
+
+    function enableDarkMode() {
+      body.classList.add('dark-mode');
+      sections.forEach(section => section.classList.add('dark-mode'));
+      skills.forEach(skill => skill.classList.add('dark-mode'));
+      projects.forEach(project => project.classList.add('dark-mode'));
+      const icon = darkModeToggle.querySelector('i');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      localStorage.setItem('darkMode', 'enabled');
+    }
+
+    function disableDarkMode() {
+      body.classList.remove('dark-mode');
+      sections.forEach(section => section.classList.remove('dark-mode'));
+      skills.forEach(skill => skill.classList.remove('dark-mode'));
+      projects.forEach(project => project.classList.remove('dark-mode'));
+      const icon = darkModeToggle.querySelector('i');
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  </script>
+</body>
+</html>
