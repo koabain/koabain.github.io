@@ -1,5 +1,5 @@
- /* General Styles */
- body {
+/* General Styles */
+body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -7,28 +7,28 @@
     background-color: #f5f5f5;
     transition: background-color 0.3s, color 0.3s;
   }
-
+  
   body.dark-mode {
     background-color: #1a1a1a;
     color: #f5f5f5;
   }
-
+  
   h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     margin: 0;
   }
-
+  
   a {
     text-decoration: none;
     color: inherit;
   }
-
+  
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
-
+  
   /* Navbar */
   nav {
     background-color: #0A2647;
@@ -38,39 +38,39 @@
     top: 0;
     z-index: 1000;
   }
-
+  
   nav.dark-mode {
     background-color: #0A2647;
   }
-
+  
   nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+  
   nav h1 {
     font-size: 24px;
     font-weight: 700;
   }
-
+  
   nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
   }
-
+  
   nav ul li a {
     color: white;
     font-weight: 600;
     transition: color 0.3s;
   }
-
+  
   nav ul li a:hover {
     color: #FF6F61;
   }
-
+  
   /* Download CV Link */
   .download-cv {
     color: white;
@@ -80,12 +80,12 @@
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
-
+  
   .download-cv:hover {
     background-color: white;
     color: #0A2647;
   }
-
+  
   /* Dark Mode Toggle */
   .dark-mode-toggle {
     background: none;
@@ -95,11 +95,11 @@
     cursor: pointer;
     transition: color 0.3s;
   }
-
+  
   .dark-mode-toggle:hover {
     color: #FF6F61;
   }
-
+  
   /* Hero Section */
   #hero {
     background: linear-gradient(135deg, #0A2647, #144272);
@@ -107,23 +107,23 @@
     padding: 100px 0;
     text-align: center;
   }
-
+  
   #hero.dark-mode {
     background: linear-gradient(135deg, #1a1a1a, #0A2647);
   }
-
+  
   #hero h1 {
     font-size: 48px;
     margin-bottom: 10px;
     animation: fadeInDown 1.5s ease-in-out;
   }
-
+  
   #hero p {
     font-size: 20px;
     margin-bottom: 30px;
     animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   #hero img {
     width: 150px;
     height: 150px;
@@ -131,7 +131,7 @@
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
   }
-
+  
   #hero .btn {
     background-color: #FF6F61;
     color: white;
@@ -141,70 +141,70 @@
     transition: background-color 0.3s;
     animation: fadeInUp 2s ease-in-out;
   }
-
+  
   #hero .btn:hover {
     background-color: #FFD700;
   }
-
+  
   /* About Section */
   #about {
     padding: 80px 0;
     background-color: white;
   }
-
+  
   #about.dark-mode {
     background-color: #2d2d2d;
     color: #f5f5f5;
   }
-
+  
   #about .container {
     display: flex;
     align-items: center;
     gap: 40px;
   }
-
+  
   #about img {
     width: 200px;
     border-radius: 10px;
     animation: fadeInLeft 1.5s ease-in-out;
   }
-
+  
   #about h2 {
     font-size: 36px;
     margin-bottom: 20px;
     animation: fadeInRight 1.5s ease-in-out;
   }
-
+  
   #about p {
     font-size: 16px;
     line-height: 1.6;
     animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   /* Skills Section */
   #skills {
     padding: 80px 0;
     background-color: #f5f5f5;
   }
-
+  
   #skills.dark-mode {
     background-color: #1a1a1a;
     color: #f5f5f5;
   }
-
+  
   #skills h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
     animation: fadeInDown 1.5s ease-in-out;
   }
-
+  
   #skills .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
   }
-
+  
   #skills .skill {
     background-color: white;
     padding: 20px;
@@ -214,50 +214,50 @@
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
     animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   #skills .skill.dark-mode {
     background-color: #2d2d2d;
     color: #f5f5f5;
   }
-
+  
   #skills .skill i {
     font-size: 32px;
     margin-bottom: 10px;
     color: #0A2647;
   }
-
+  
   #skills .skill.dark-mode i {
     color: #FF6F61;
   }
-
+  
   #skills .skill:hover {
     transform: translateY(-10px);
   }
-
+  
   /* Projects Section */
   #projects {
     padding: 80px 0;
     background-color: white;
   }
-
+  
   #projects.dark-mode {
     background-color: #2d2d2d;
     color: #f5f5f5;
   }
-
+  
   #projects h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
     animation: fadeInDown 1.5s ease-in-out;
   }
-
+  
   #projects .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-
+  
   #projects .project {
     background-color: #f5f5f5;
     padding: 20px;
@@ -265,31 +265,31 @@
     transition: transform 0.3s, background-color 0.3s, color 0.3s;
     animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   #projects .project.dark-mode {
     background-color: #1a1a1a;
     color: #f5f5f5;
   }
-
+  
   #projects .project:hover {
     transform: translateY(-10px);
   }
-
+  
   #projects .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
   }
-
+  
   #projects .project p {
     font-size: 16px;
     margin-bottom: 20px;
   }
-
+  
   #projects .project a {
     color: #FF6F61;
     font-weight: 600;
   }
-
+  
   /* Contact Section */
   #contact {
     padding: 80px 0;
@@ -297,30 +297,28 @@
     color: white;
     text-align: center;
   }
-
+  
   #contact.dark-mode {
     background-color: #1a1a1a;
   }
-
+  
   #contact h2 {
     font-size: 36px;
     margin-bottom: 40px;
     animation: fadeInDown 1.5s ease-in-out;
   }
-
+  
   #contact p {
     margin: 10px 0;
     font-size: 1.2rem;
     animation: fadeInUp 1.5s ease-in-out;
   }
-
+  
   #contact a {
     color: #FF6F61;
     font-weight: bold;
   }
-
   
-
   /* Footer */
   footer {
     background-color: #144272;
@@ -328,36 +326,36 @@
     text-align: center;
     padding: 20px 0;
   }
-
+  
   footer.dark-mode {
     background-color: #1a1a1a;
   }
-
+  
   footer p {
     margin: 0;
   }
-
+  
   footer .social-icons {
     margin-top: 10px;
   }
-
+  
   footer .social-icons a {
     color: white;
     margin: 0 10px;
     font-size: 20px;
     transition: color 0.3s;
   }
-
+  
   footer .social-icons a:hover {
     color: #FF6F61;
   }
-
+  
   /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-
+  
   @keyframes fadeInDown {
     from {
       opacity: 0;
@@ -368,7 +366,7 @@
       transform: translateY(0);
     }
   }
-
+  
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -379,7 +377,7 @@
       transform: translateY(0);
     }
   }
-
+  
   @keyframes fadeInLeft {
     from {
       opacity: 0;
@@ -390,7 +388,7 @@
       transform: translateX(0);
     }
   }
-
+  
   @keyframes fadeInRight {
     from {
       opacity: 0;
@@ -401,15 +399,85 @@
       transform: translateX(0);
     }
   }
-
+  
   /* Responsive Design */
   @media (max-width: 768px) {
+    /* Navbar */
+    nav .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    /* Hero Section */
+    #hero h1 {
+      font-size: 36px;
+    }
+  
+    #hero p {
+      font-size: 16px;
+    }
+  
+    /* About Section */
     #about .container {
       flex-direction: column;
       text-align: center;
     }
-
+  
     #about img {
       margin-bottom: 20px;
+    }
+  
+    /* Skills Section */
+    #skills .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    /* Projects Section */
+    #projects .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Hero Section */
+    #hero h1 {
+      font-size: 28px;
+    }
+  
+    #hero p {
+      font-size: 14px;
+    }
+  
+    /* About Section */
+    #about h2 {
+      font-size: 28px;
+    }
+  
+    #about p {
+      font-size: 14px;
+    }
+  
+    /* Skills Section */
+    #skills h2 {
+      font-size: 28px;
+    }
+  
+    #skills .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    /* Projects Section */
+    #projects h2 {
+      font-size: 28px;
+    }
+  
+    #projects .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
   }
